@@ -1,0 +1,30 @@
+#school{
+    color: rgb(57, 57, 199);
+    /* font-size: xx-large; */
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul.navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+ul.navbar li {
+    float: right;
+}
+ul.navbar li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul.navbar li a:hover:not(.active){background-color: black;}
+ul.navbar li a.active{background-color: aqua;}
+ul.navbar li.right{float: right;}
+@media  screen and (max-width:600px) {
+    ul.navbar li.right,
+    ul.navbar li {float:none}
+}
